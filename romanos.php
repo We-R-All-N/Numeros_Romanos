@@ -1,8 +1,6 @@
 <?php
     print "Programa para pasar números a notación romana\n Ingrese un números\n";
-
-    $numero = 4165;
-
+    $numero = 3165;
    	if($numero > 1000)
    	{
     $m=floor($numero/1000);
@@ -29,5 +27,32 @@
     8  => 'VIII',
     9  => 'IX'
     ];
-    
+    $decimales = [
+    1  => 'X',	
+    2  => 'XX',
+    3  => 'XXX',
+    4  => 'XL',
+    5  => 'L',
+    6  => 'LX',
+    7  => 'LXX',
+    8  => 'LXXX',
+    9  => 'XC'
+    ];
+    $centenas = [
+    1  => 'C',
+    2  => 'CC',
+    3  => 'CCC',
+    4  => 'CD',
+    5  => 'D',
+    6  => 'DC',
+    7  => 'DCC',
+    8  => 'DCCC',
+    9  => 'CM'
+    ];
+    $miles = [
+    1  => 'M',
+    2  => 'MM',
+    3  => 'MMM'
+    ];
+    $unidades = $miles[$m]. $centenas[$c] . $decimales[$d] . $unidades[$numero];
 ?>
