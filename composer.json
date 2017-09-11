@@ -1,0 +1,14 @@
+{
+    "name": "poli/probando_travisci",
+    "require": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ejemplo\\": "src"
+        }
+    }
+}
