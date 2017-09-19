@@ -1,6 +1,12 @@
 <?php
     print "Programa para pasar números a notación romana\n Ingrese un números\n";
-    $numero = 2000;
+    class numeroRomano 
+    {
+    public $numero = 0
+    public $enRomano = '';
+
+    private function aRomano($this->numero)
+    {
     $m = 0;
     $c = 0;
     $d = 0;
@@ -61,6 +67,16 @@
     2  => 'MM',
     3  => 'MMM'
     ];
-    $unidades = $miles[$m]. $centenas[$c] . $decimales[$d] . $unidades[$numero];
-    print $unidades;
+    $this->enRomano = $miles[$m]. $centenas[$c] . $decimales[$d] . $unidades[$numero];
+    }
+    public function mostrarNumero
+    {
+    return $this->numero
+    }
+    public function mostrarRomano
+    {
+    return $this->enRomano
+    }
+    }
+    
 ?>
